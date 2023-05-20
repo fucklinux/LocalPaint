@@ -340,6 +340,7 @@
                 if (localStorage.getItem("paintDeleted" + i) != "true") {
                     paints += 1;
                 }
+                document.getElementsByName("paintListItems")[i].classList.add("waves-effect");
             }
             if (editing != "") {
                 document.getElementsByName("paintListItems")[editing].classList.add("mdui-list-item-active");
